@@ -27,3 +27,11 @@ document.querySelector("#faster").addEventListener("click", function() {
 	video.playbackRate += 0.05;
 	console.log("New video speed is " + video.playbackRate);
 });
+
+// Skip Ahead
+document.querySelector("#skip").addEventListener("click", function() {
+	console.log("Skip Video");
+	video.currentTime += 15;
+	console.log(video.currentTime)
+	video.loop = true;
+});
