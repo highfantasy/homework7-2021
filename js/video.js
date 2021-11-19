@@ -33,5 +33,5 @@ document.querySelector("#skip").addEventListener("click", function() {
 	console.log("Skip Video");
 	video.currentTime += 15;
 	console.log(video.currentTime)
-	video.loop = true;
+	video.loop = false;
 });
